@@ -24,6 +24,7 @@ public function read(){
     p.category_id,
     p.title,
     p.body,
+    p.author,
     p.created_at
     FROM '. $this->table.' p
     LEFT JOIN 
