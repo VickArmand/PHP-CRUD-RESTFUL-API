@@ -29,7 +29,7 @@ if(($result->rowCount())==1){
             'category_name'=>$post->category_name
         );
 // Convert to JSON
-print_r(json_encode($posts_item));
+print_r(json_encode($post_item));
     }
     else{
         echo "Post Not Found";

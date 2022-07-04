@@ -48,7 +48,7 @@ public function view_single(){
     FROM '. $this->table.' p
     LEFT JOIN 
     categories c ON p.category_id=c.id
-     WHERE id= ?
+     WHERE p.id= ?
      LIMIT 0,1';
     // PREPARED STATEMENT
     $stmt= $this->conn->prepare($query);
